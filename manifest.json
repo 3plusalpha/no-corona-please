@@ -7,11 +7,18 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon-off.png"
+    },
+    "default_title": "Hide Corona News"
+  },
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["jquery-3.3.1.min.js", "content.js"]
+      "js": ["jquery-3.3.1.min.js", "content.js"],
+      "run_at": "document_end"
     }
   ]
 }
