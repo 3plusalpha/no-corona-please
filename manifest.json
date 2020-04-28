@@ -1,7 +1,7 @@
 {
-  "name": "Hide Corona News",
+  "name": "Desinfektor",
   "version": "0.1",
-  "description": "Hide corona related news",
+  "description": "Hide corona related news to see what else is going on",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"],
